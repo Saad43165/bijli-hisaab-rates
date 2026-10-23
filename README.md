@@ -44,3 +44,13 @@ When NEPRA issues a new base tariff (new SRO for slab rates), update the `slabs`
 | `billing_mode` | `whole`, `previous_slab` or `incremental` |
 | `fc_surcharge_per_unit` | FC / debt servicing surcharge, Rs/unit |
 | `applies_adjustments` | Whether FCA and QTA apply to that category (false for lifeline) |
+
+## Rate news on Home (optional)
+Add a short message that appears on every app's Home screen in the "Rate news" card, in English and Urdu:
+```json
+"news": {
+  "en": "FCA for October is +Rs 1.11/unit on November bills.",
+  "ur": "نومبر کے بلوں پر اکتوبر کا FCA +1.11 روپے فی یونٹ ہے۔"
+}
+```
+Remove the `news` block (or leave the text empty) to hide it. Remember to increase `version`.
